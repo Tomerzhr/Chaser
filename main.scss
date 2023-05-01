@@ -1,0 +1,185 @@
+@use 'variables' as *;
+
+* {
+    font-family: $ff-main;
+}
+
+html,
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.mainContent {
+    display: flex;
+}
+
+.photoSide {
+    width: 50%;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+
+.contactSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        margin: 10px;
+
+        h1 {
+            color: $clr-primary;
+            font-size: $fs-Large;
+            font-weight: 700;
+
+            span {
+                color: $clr-secondary;
+            }
+        }
+
+        p {
+            font-weight: $fw-500;
+        }
+    }
+
+    .btnAria {
+        margin-top: 1rem;
+
+        button {
+            width: 130px;
+            min-height: 40px;
+            background-color: $clr-secondary;
+            color: $clr-neutral;
+            font-size: medium;
+            font-weight: $fw-700;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.4s;
+
+            &:hover {
+                background-color: rgb(204, 0, 34)
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            border: none;
+            border-bottom: 3.5px solid $clr-secondary;
+            background-color: rgba(197, 197, 197, 0.168);
+            min-height: 2rem;
+            max-width: 80%;
+
+            &:focus {
+                outline: none !important;
+            }
+
+        }
+
+        label {
+            font-size: $fs-small;
+            font-weight: $fw-500;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+
+// -----------media query----------
+
+@media (min-width:320px) and (max-width:768px) {
+    .mainContent {
+        text-align: center;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactSide {
+        width: 100%;
+
+        .content {
+
+            width: 100%;
+            margin: 0;
+            max-height: 50%;
+        }
+
+        form {
+            align-items: center;
+
+            input {
+                width: 80%;
+            }
+        }
+
+        button {
+            margin-bottom: 1rem;
+        }
+    }
+
+
+    .photoSide {
+        width: 100%;
+    }
+
+
+}
+
+@media (min-width:767px) and (max-width:1084px) {
+    .mainContent {
+        text-align: center;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .content {
+
+        width: 100%;
+        margin: 0;
+        max-height: 50%;
+
+        form {
+            align-items: center;
+
+            input {
+                width: 55%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+
+        button {
+            margin-bottom: 1rem;
+        }
+    }
+
+
+    .photoSide {
+        width: 100%;
+    }
+
+
+}

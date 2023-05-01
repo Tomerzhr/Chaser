@@ -1,0 +1,141 @@
+* {
+  font-family: "Heebo", sans-serif;
+}
+
+html,
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContent {
+  display: flex;
+}
+
+.photoSide {
+  width: 50%;
+}
+.photoSide img {
+  width: 100%;
+}
+
+.contactSide {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactSide .content {
+  margin: 10px;
+}
+.contactSide .content h1 {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.contactSide .content h1 span {
+  color: #F50B33;
+}
+.contactSide .content p {
+  font-weight: 500;
+}
+.contactSide .btnAria {
+  margin-top: 1rem;
+}
+.contactSide .btnAria button {
+  width: 130px;
+  min-height: 40px;
+  background-color: #F50B33;
+  color: white;
+  font-size: medium;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.contactSide .btnAria button:hover {
+  background-color: rgb(204, 0, 34);
+}
+.contactSide form {
+  display: flex;
+  flex-direction: column;
+}
+.contactSide form input {
+  border: none;
+  border-bottom: 3.5px solid #F50B33;
+  background-color: rgba(197, 197, 197, 0.168);
+  min-height: 2rem;
+  max-width: 80%;
+}
+.contactSide form input:focus {
+  outline: none !important;
+}
+.contactSide form label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .mainContent {
+    text-align: center;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactSide {
+    width: 100%;
+  }
+  .contactSide .content {
+    width: 100%;
+    margin: 0;
+    max-height: 50%;
+  }
+  .contactSide form {
+    align-items: center;
+  }
+  .contactSide form input {
+    width: 80%;
+  }
+  .contactSide button {
+    margin-bottom: 1rem;
+  }
+  .photoSide {
+    width: 100%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1084px) {
+  .mainContent {
+    text-align: center;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    width: 100%;
+    margin: 0;
+    max-height: 50%;
+  }
+  .content form {
+    align-items: center;
+  }
+  .content form input {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content button {
+    margin-bottom: 1rem;
+  }
+  .photoSide {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
