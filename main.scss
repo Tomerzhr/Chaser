@@ -52,24 +52,23 @@ p {
         }
     }
 
-    .btnAria {
-        margin-top: 1rem;
 
-        button {
-            width: 130px;
-            min-height: 40px;
-            background-color: $clr-secondary;
-            color: $clr-neutral;
-            font-size: medium;
-            font-weight: $fw-700;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.4s;
+    button {
+        width: 130px;
+        min-height: 35px;
+        background-color: $clr-secondary;
+        color: $clr-neutral;
+        font-size: medium;
+        font-weight: $fw-700;
+        margin-top: 0.8rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.4s;
 
-            &:hover {
-                background-color: rgb(204, 0, 34)
-            }
+        &:hover {
+            background-color: rgb(204, 0, 34)
         }
+
     }
 
     form {
@@ -94,6 +93,8 @@ p {
             font-weight: $fw-500;
             margin-top: 10px;
         }
+
+
     }
 }
 
@@ -101,7 +102,7 @@ p {
 
 // -----------media query----------
 
-@media (min-width:320px) and (max-width:768px) {
+@media (max-width:450px) {
     .mainContent {
         text-align: center;
         min-width: 100%;
@@ -119,6 +120,11 @@ p {
             width: 100%;
             margin: 0;
             max-height: 50%;
+
+            h1 {
+                font-size: $fs-semiLarge;
+            }
+
         }
 
         form {
@@ -127,53 +133,12 @@ p {
             input {
                 width: 80%;
             }
-        }
 
-        button {
-            margin-bottom: 1rem;
-        }
-    }
-
-
-    .photoSide {
-        width: 100%;
-    }
-
-
-}
-
-@media (min-width:767px) and (max-width:1084px) {
-    .mainContent {
-        text-align: center;
-        min-width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .content {
-
-        width: 100%;
-        margin: 0;
-        max-height: 50%;
-
-        form {
-            align-items: center;
-
-            input {
-                width: 55%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            button {
+                width: 315px;
             }
-
         }
 
-        button {
-            margin-bottom: 1rem;
-        }
     }
 
 
