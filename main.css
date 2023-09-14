@@ -37,7 +37,7 @@ p {
   font-weight: 700;
 }
 .contactSide .content h1 span {
-  color: #F50B33;
+  color: #ffae00;
 }
 .contactSide .content p {
   font-weight: 500;
@@ -45,7 +45,7 @@ p {
 .contactSide button {
   width: 130px;
   min-height: 35px;
-  background-color: #F50B33;
+  background-color: #ffae00;
   color: white;
   font-size: medium;
   font-weight: 700;
@@ -55,7 +55,7 @@ p {
   transition: background-color 0.4s;
 }
 .contactSide button:hover {
-  background-color: rgb(204, 0, 34);
+  background-color: #ca8a00;
 }
 .contactSide form {
   display: flex;
@@ -63,7 +63,7 @@ p {
 }
 .contactSide form input {
   border: none;
-  border-bottom: 3.5px solid #F50B33;
+  border-bottom: 3.5px solid #ffae00;
   background-color: rgba(197, 197, 197, 0.168);
   min-height: 2rem;
   max-width: 80%;
@@ -74,6 +74,11 @@ p {
 .contactSide form label {
   font-size: 0.8rem;
   font-weight: 500;
+  margin-top: 10px;
+}
+
+.confirmation-message {
+  display: none;
   margin-top: 10px;
 }
 

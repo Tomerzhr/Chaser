@@ -66,7 +66,7 @@ p {
         transition: background-color 0.4s;
 
         &:hover {
-            background-color: rgb(204, 0, 34)
+            background-color: #ca8a00
         }
 
     }
@@ -98,6 +98,10 @@ p {
     }
 }
 
+.confirmation-message{
+    display: none;
+    margin-top: 10px;
+}
 
 
 // -----------media query----------
