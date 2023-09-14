@@ -57,6 +57,10 @@ p {
 .contactSide button:hover {
   background-color: #ca8a00;
 }
+
+button:disabled {
+  opacity: 0.5;
+}
 .contactSide form {
   display: flex;
   flex-direction: column;
@@ -114,4 +118,4 @@ p {
   .photoSide {
     width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
